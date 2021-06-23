@@ -1,0 +1,12 @@
+[package]
+name = "thghosting-data-centers"
+version = "0.1.0"
+authors = ["vkill <vkill.net@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+isahc = { version = "1.4", default-features = false, features = ["text-decoding"]}
+
+scraper = { version = "0.12", default-features = false }
+
+thiserror = { version = "1.0", default-features = false }
