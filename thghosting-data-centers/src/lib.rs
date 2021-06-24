@@ -45,6 +45,7 @@ pub struct DataCenter {
     pub available_services: Vec<AvailableService>,
     pub standard_bare_metal_bandwidth: Option<String>,
     pub ping: Option<Ipv4Addr>,
+    pub test_download: Option<String>,
     pub url: Option<String>,
 }
 
@@ -72,6 +73,7 @@ pub fn parse(html: &str) -> Result<Vec<DataCenter>, ParseError> {
         let mut available_services: Vec<AvailableService> = vec![];
         let mut standard_bare_metal_bandwidth: Option<String> = None;
         let mut ping: Option<Ipv4Addr> = None;
+        let mut test_download: Option<String> = None;
 
         let tr_selector = Selector::parse("table tr").unwrap();
         for tr_element in location_element.select(&tr_selector) {
@@ -126,14 +128,29 @@ pub fn parse(html: &str) -> Result<Vec<DataCenter>, ParseError> {
                             continue 'locations;
                         }
                         _ => {
-                            let ipv4_addr =
-                                s.parse().map_err(|err| ParseError::PingInvalid(s, err))?;
-                            ping = Some(ipv4_addr);
+                            let v = s.parse().map_err(|err| ParseError::PingInvalid(s, err))?;
+                            ping = Some(v);
                         }
                     }
                 }
                 "Certifications" => {}
-                "Test Download" => {}
+                "Test Download" => {
+                    let s = value_element.inner_html();
+                    match s.as_str() {
+                        "" => {}
+                        _ => {
+                            let a_selector = Selector::parse("a").unwrap();
+                            if let Some(v) = value_element
+                                .select(&a_selector)
+                                .next()
+                                .and_then(|ele| ele.value().attr("href"))
+                                .map(ToOwned::to_owned)
+                            {
+                                test_download = Some(v);
+                            }
+                        }
+                    }
+                }
                 _ => {}
             }
         }
@@ -151,6 +168,7 @@ pub fn parse(html: &str) -> Result<Vec<DataCenter>, ParseError> {
             available_services,
             standard_bare_metal_bandwidth,
             ping,
+            test_download,
             url,
         });
     }
@@ -191,6 +209,7 @@ mod tests {
             .filter(|dc| dc.id == "london")
             .next()
             .unwrap();
+        assert_eq!(dc_london.city, "London");
         assert_eq!(
             dc_london.available_services,
             vec![
@@ -198,7 +217,19 @@ mod tests {
                 AvailableService::VirtualServers
             ]
         );
+        assert_eq!(
+            dc_london.standard_bare_metal_bandwidth,
+            Some("100TB".to_owned())
+        );
         assert_eq!(dc_london.ping, Some("82.163.78.28".parse().unwrap()));
+        assert_eq!(
+            dc_london.test_download,
+            Some("http://82.163.78.28/speedtest.256mb".to_owned())
+        );
+        assert_eq!(
+            dc_london.url,
+            Some("https://info.thghosting.com/us/data-center/london".to_owned())
+        );
 
         Ok(())
     }
