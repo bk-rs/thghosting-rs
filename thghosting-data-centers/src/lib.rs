@@ -56,7 +56,7 @@ pub fn parse(html: &str) -> Result<Vec<DataCenter>, ParseError> {
 
     let mut data_centers = vec![];
 
-    'locations: for location_element in document.select(&location_selector) {
+    for location_element in document.select(&location_selector) {
         let id = location_element
             .value()
             .attr("id")
@@ -124,9 +124,7 @@ pub fn parse(html: &str) -> Result<Vec<DataCenter>, ParseError> {
                 "Ping/Trace Route" => {
                     let s = value_element.inner_html();
                     match s.as_str() {
-                        "-" | "" => {
-                            continue 'locations;
-                        }
+                        "-" | "" => {}
                         _ => {
                             let v = s.parse().map_err(|err| ParseError::PingInvalid(s, err))?;
                             ping = Some(v);
