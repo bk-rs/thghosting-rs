@@ -192,13 +192,11 @@ pub enum ParseError {
 mod tests {
     use super::*;
 
-    use std::error;
-
     #[test]
-    fn test_parse() -> Result<(), Box<dyn error::Error>> {
+    fn test_parse() {
         let html = include_str!("../tests/data-centers.html");
 
-        let data_centers = parse(html)?;
+        let data_centers = parse(html).unwrap();
 
         println!("{:?}", data_centers);
 
@@ -228,7 +226,5 @@ mod tests {
             dc_london.url,
             Some("https://info.thghosting.com/us/data-center/london".to_owned())
         );
-
-        Ok(())
     }
 }
