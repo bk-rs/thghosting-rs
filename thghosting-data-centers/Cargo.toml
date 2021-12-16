@@ -13,7 +13,7 @@ categories = []
 readme = "README.md"
 
 [dependencies]
-isahc = { version = "1.6", default-features = false, features = ["text-decoding"]}
+http-api-client-endpoint = { version = "0.2", default-features = false }
 
 scraper = { version = "0.12", default-features = false }
 
