@@ -200,11 +200,7 @@ mod tests {
 
         println!("{:?}", data_centers);
 
-        let dc_london = data_centers
-            .iter()
-            .filter(|dc| dc.id == "london")
-            .next()
-            .unwrap();
+        let dc_london = data_centers.iter().find(|dc| dc.id == "london").unwrap();
         assert_eq!(dc_london.city, "London");
         assert_eq!(
             dc_london.available_services,
