@@ -49,8 +49,8 @@ pub struct DataCenter {
     pub url: Option<String>,
 }
 
-pub fn parse(html: &str) -> Result<Vec<DataCenter>, ParseError> {
-    let document = Html::parse_document(html);
+pub fn parse(html: impl AsRef<str>) -> Result<Vec<DataCenter>, ParseError> {
+    let document = Html::parse_document(html.as_ref());
 
     let location_selector = Selector::parse("div.location").unwrap();
 

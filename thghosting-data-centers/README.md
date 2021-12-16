@@ -6,6 +6,4 @@
 
 ```
 curl https://www.thghosting.com/network/data-centers/ -o tests/data-centers.html
-
-
 ```
