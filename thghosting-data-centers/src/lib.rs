@@ -13,7 +13,7 @@ pub const HTML_URL: &str = "https://www.thghosting.com/network/data-centers/";
 
 pub async fn fetch_html() -> Result<String, FetchHtmlError> {
     let client = HttpClient::builder()
-        .timeout(Duration::from_secs(3))
+        .timeout(Duration::from_secs(5))
         .build()?;
 
     let mut res = client.get_async(HTML_URL).await?;
@@ -31,7 +31,7 @@ pub enum FetchHtmlError {
     IoError(#[from] IoError),
 }
 
-#[derive(PartialEq, Debug, Clone)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq)]
 pub enum AvailableService {
     BareMetalServers,
     VirtualServers,
