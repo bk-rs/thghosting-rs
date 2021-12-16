@@ -1,0 +1,976 @@
+[
+    {
+        "cords": [
+            539,
+            155
+        ],
+        "centresTitle": "Amsterdam <small>x</small>3",
+        "centres": [
+            {
+                "visible": true,
+                "id": "amsterdam",
+                "title": "Amsterdam",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    },
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB",
+                "ping": "185.80.222.81",
+                "certifications": "ISO 27001<br>ISO 9001<br>AMSIX Certified<br>ISAE 3402<br>PCI compliant",
+                "testDownload": {
+                    "label": "256MB",
+                    "src": "http://185.80.222.81/speedtest.256mb"
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/us/data-center/amsterdam\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            }
+        ]
+    },
+    {
+        "cords": [
+            261,
+            230
+        ],
+        "centresTitle": "Atlanta <small>x</small>2",
+        "centres": [
+            {
+                "id": "atlanta",
+                "title": "Atlanta",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    },
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB",
+                "ping": "104.200.144.23",
+                "certifications": "PCI<br>GDPR<br>SAS70 Type II",
+                "testDownload": {
+                    "label": "256MB",
+                    "src": "http://104.200.144.23/speedtest.256mb"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            772,
+            291
+        ],
+        "centresTitle": "Chennai <small>x</small>1",
+        "centres": [
+            {
+                "id": "chennai",
+                "title": "Chennai",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "5TB",
+                "ping": "169.38.65.84",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.che01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            243,
+            193
+        ],
+        "centresTitle": "Chicago <small>x</small>2",
+        "centres": [
+            {
+                "id": "chicago",
+                "title": "Chicago",
+                "availableServices": [
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "VPS SSD only",
+                "ping": "104.200.137.2",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://104.200.137.2/test100.zip"
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/us/data-center/chicago\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            }
+        ]
+    },
+    {
+        "cords": [
+            205,
+            233
+        ],
+        "centresTitle": "Dallas <small>x</small>4",
+        "centres": [
+            {
+                "id": "dallas",
+                "title": "Dallas - THG",
+                "availableServices": [
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "VPS SSD only",
+                "ping": "192.111.142.7",
+                "testDownload": {
+                    "label": "256MB",
+                    "src": "http://192.111.142.7/speedtest.256mb"
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/us/data-center/dallas\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            },
+            {
+                "id": "dallas",
+                "title": "Dallas - Softlayer",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB",
+                "ping": "198.23.112.180",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.dal09.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            545,
+            170
+        ],
+        "centresTitle": "Frankfurt <small>x</small>3",
+        "centres": [
+            {
+                "id": "frankfurt",
+                "title": "Frankfurt",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "10TB",
+                "ping": "159.122.69.4",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.fra02.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/us/data-center/frankfurt\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            }
+        ]
+    },
+    {
+        "cords": [
+            880,
+            260
+        ],
+        "centresTitle": "Hong Kong <small>x</small>1",
+        "centres": [
+            {
+                "id": "hong-kong",
+                "title": "Hong Kong",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "10TB",
+                "ping": "119.81.130.170",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.hkg02.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            217,
+            238
+        ],
+        "centresTitle": "Houston <small>x</small>1",
+        "centres": [
+            {
+                "id": "houston",
+                "title": "Houston",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB",
+                "ping": "209.95.34.56",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.hou02.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            518,
+            157
+        ],
+        "centresTitle": "London <small>x</small>3",
+        "centres": [
+            {
+                "id": "london",
+                "title": "London",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    },
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    }
+                ],
+                "availableNetworks": "Premium, 10Gbps, Volume",
+                "bandwidth": "100TB",
+                "ping": "82.163.78.28",
+                "testDownload": {
+                    "label": "256MB",
+                    "src": "http://82.163.78.28/speedtest.256mb"
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/us/data-center/london\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            }
+        ]
+    },
+    {
+        "cords": [
+            142,
+            220
+        ],
+        "centresTitle": "Los Angeles <small>x</small>2",
+        "centres": [
+            {
+                "id": "la",
+                "title": "Los Angeles",
+                "availableServices": [
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    },
+                    {
+                        "isComingSoon": true,
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "VPS SSD only",
+                "ping": "172.98.94.29",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://172.98.94.29/test100.zip"
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/us/data-center/los-angeles\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            }
+        ]
+    },
+    {
+        "cords": [
+            980,
+            461
+        ],
+        "centresTitle": "Melbourne <small>x</small>1",
+        "centres": [
+            {
+                "id": "melbourne",
+                "title": "Melbourne",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "10TB",
+                "ping": "168.1.65.244",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.mel01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            210,
+            275
+        ],
+        "centresTitle": "Mexico City <small>x</small>1",
+        "centres": [
+            {
+                "id": "mexico-city",
+                "title": "Mexico City",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "5TB",
+                "ping": "169.57.4.116",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.mex01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            288,
+            180
+        ],
+        "centresTitle": "Montreal <small>x</small>2",
+        "centres": [
+            {
+                "id": "montreal",
+                "title": "Montreal",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "10TB",
+                "ping": "169.54.124.180",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.mon01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            555,
+            185
+        ],
+        "centresTitle": "Milan <small>x</small>1",
+        "centres": [
+            {
+                "id": "milan",
+                "title": "Milan",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB",
+                "ping": "159.122.128.84",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.mil01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            278,
+            210
+        ],
+        "centresTitle": "Washington DC <small>x</small>1",
+        "centres": [
+            {
+                "id": "washington",
+                "title": "Washington DC",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB",
+                "ping": "169.55.65.212",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.wdc04.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            284,
+            200
+        ],
+        "centresTitle": "New Jersey <small>x</small>1",
+        "centres": [
+            {
+                "id": "nj",
+                "title": "New Jersey",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    },
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB & 10Gbps",
+                "ping": "-",
+                "certifications": "HIPAA<br>ISO 27001<br>NIST 800-53/FISMA<br>PCI DSS<br>SSAE16<br>SOC 1 Type<br>SOC 2 Type",
+                "testDownload": {
+                    "label": "",
+                    "src": ""
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/us/data-center/new-jersey\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            }
+        ]
+    },
+    {
+        "cords": [
+            293,
+            195
+        ],
+        "centresTitle": "New York City <small>x</small>3",
+        "centres": [
+            {
+                "id": "nyc",
+                "title": "New York City",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    },
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB",
+                "ping": "107.182.236.247",
+                "certifications": "SSAE 16<br>HIPAA<br>PCI compliant<br>CPNI",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://107.182.236.247/100mb.file"
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/us/data-center/new-york-city\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            }
+        ]
+    },
+    {
+        "cords": [
+            552,
+            115
+        ],
+        "centresTitle": "Oslo <small>x</small>1",
+        "centres": [
+            {
+                "id": "oslo",
+                "title": "Oslo",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "10TB",
+                "ping": "169.51.65.20",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.osl01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            267,
+            244
+        ],
+        "centresTitle": "Orlando <small>x</small>1",
+        "centres": [
+            {
+                "id": "orlando",
+                "title": "Orlando",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    },
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB",
+                "ping": "198.147.22.75",
+                "certifications": "-",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://mco01.speed.my-tss.com/100mb.test"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            267,
+            254
+        ],
+        "centresTitle": "Miami <small>x</small>2",
+        "centres": [
+            {
+                "id": "miami",
+                "title": "Miami",
+                "availableServices": [
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    },
+                    {
+                        "isComingSoon": true,
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "VPS SSD only",
+                "ping": "172.98.77.20",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "256MB",
+                    "src": "http://172.98.77.20/speedtest.256mb"
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/us/data-center/miami\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            }
+        ]
+    },
+    {
+        "cords": [
+            528,
+            170
+        ],
+        "centresTitle": "Paris <small>x</small>1",
+        "centres": [
+            {
+                "id": "paris",
+                "title": "Paris",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "10TB",
+                "ping": "159.8.64.212",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.par01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            165,
+            225
+        ],
+        "centresTitle": "Phoenix <small>x</small>1",
+        "centres": [
+            {
+                "id": "phoenix",
+                "title": "Phoenix",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    },
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB",
+                "ping": "162.220.51.22",
+                "certifications": "PCI<br>GDPR<br>SAS70 Type II",
+                "testDownload": {
+                    "label": "256MB",
+                    "src": "http://162.220.51.22/speedtest.256mb"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "centresTitle": "Salt Lake City <small>x</small>1",
+        "cords": [
+            155,
+            190
+        ],
+        "centres": [
+            {
+                "id": "slc",
+                "title": "Salt Lake City",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    },
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    }
+                ],
+                "availableNetworks": "Premium, 10Gbps, Volume",
+                "bandwidth": "100TB",
+                "ping": "209.95.34.56",
+                "certifications": "SAS70 Type II<br>SSAE 16<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://slc01.100tb.com/spd/100mb.file"
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/us/data-center/salt-lake-city\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            }
+        ]
+    },
+    {
+        "cords": [
+            135,
+            210
+        ],
+        "centresTitle": "San Jose <small>x</small>2",
+        "centres": [
+            {
+                "id": "san-jose",
+                "title": "San Jose",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB",
+                "ping": "50.23.64.58",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.sjc01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            380,
+            404
+        ],
+        "centresTitle": "Sao Paulo <small>x</small>2",
+        "centres": [
+            {
+                "id": "sao-paulo",
+                "title": "Sao Paulo",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "5TB",
+                "ping": "169.57.128.148",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.sao01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/us/data-center/saopaulo\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            }
+        ]
+    },
+    {
+        "cords": [
+            130,
+            180
+        ],
+        "centresTitle": "Seattle <small>x</small>2",
+        "centres": [
+            {
+                "id": "seattle",
+                "title": "Seattle",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "100TB",
+                "ping": "67.228.112.250",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.sea01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            920,
+            210
+        ],
+        "centresTitle": "Seoul <small>x</small>1",
+        "centres": [
+            {
+                "id": "seoul",
+                "title": "Seoul",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "10TB",
+                "ping": "169.56.65.20",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.seo01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            842,
+            325
+        ],
+        "centresTitle": "Singapore <small>x</small>1",
+        "centres": [
+            {
+                "id": "singapore",
+                "title": "Singapore",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "10TB",
+                "ping": "119.81.28.170",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.sng01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            990,
+            451
+        ],
+        "centresTitle": "Sydney <small>x</small>3",
+        "centres": [
+            {
+                "id": "sydney",
+                "title": "Sydney",
+                "availableServices": [
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    },
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "10TB",
+                "ping": "168.1.1.212",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.syd01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#",
+                "pardot": "<a href=\"https://info.thghosting.com/data-center/sydney\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+            }
+        ]
+    },
+    {
+        "cords": [
+            960,
+            215
+        ],
+        "centresTitle": "Tokyo <small>x</small>2",
+        "centres": [
+            {
+                "id": "tokyo",
+                "title": "Tokyo",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "10TB",
+                "ping": "161.202.125.20",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.tok02.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            268,
+            183
+        ],
+        "centresTitle": "Toronto <small>x</small>1",
+        "centres": [
+            {
+                "id": "toronto",
+                "title": "Toronto",
+                "availableServices": [
+                    {
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "10TB",
+                "ping": "158.85.65.212",
+                "certifications": "ISO 27001<br>HIPAA<br>PCI compliant",
+                "testDownload": {
+                    "label": "100MB",
+                    "src": "http://speedtest.tor01.softlayer.com/downloads/test100.zip"
+                },
+                "link": "#"
+            }
+        ]
+    },
+    {
+        "cords": [
+            132,
+            166
+        ],
+        "centresTitle": "Vancouver <small>x</small>1",
+        "centres": [
+            {
+                "id": "vancouver",
+                "title": "Vancouver",
+                "availableServices": [
+                    {
+                        "title": "Virtual Servers",
+                        "src": "/views/images/maps/cloud-hosting.png"
+                    },
+                    {
+                        "isComingSoon": true,
+                        "title": "Bare Metal Servers",
+                        "src": "/views/images/maps/dedicated-servers.png"
+                    }
+                ],
+                "availableNetworks": "Premium",
+                "bandwidth": "VPS SSD only",
+                "ping": "192.111.132.3",
+                "testDownload": {
+                    "label": "256MB",
+                    "src": "http://192.111.132.3/speedtest.256mb"
+                },
+                "link": "#"
+            }
+        ]
+    }
+]

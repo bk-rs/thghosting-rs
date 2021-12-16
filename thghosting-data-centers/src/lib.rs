@@ -9,14 +9,14 @@ use isahc::{
 };
 use scraper::{Html, Selector};
 
-pub const FETCH_URL: &str = "https://www.thghosting.com/network/data-centers/";
+pub const HTML_URL: &str = "https://www.thghosting.com/network/data-centers/";
 
-pub async fn fetch() -> Result<String, FetchError> {
+pub async fn fetch_html() -> Result<String, FetchHtmlError> {
     let client = HttpClient::builder()
         .timeout(Duration::from_secs(3))
         .build()?;
 
-    let mut res = client.get_async(FETCH_URL).await?;
+    let mut res = client.get_async(HTML_URL).await?;
 
     let res_body_text = res.text().await?;
 
@@ -24,7 +24,7 @@ pub async fn fetch() -> Result<String, FetchError> {
 }
 
 #[derive(thiserror::Error, Debug)]
-pub enum FetchError {
+pub enum FetchHtmlError {
     #[error("IsahcError {0:?}")]
     IsahcError(#[from] IsahcError),
     #[error("IoError {0:?}")]
@@ -49,7 +49,7 @@ pub struct DataCenter {
     pub url: Option<String>,
 }
 
-pub fn parse(html: impl AsRef<str>) -> Result<Vec<DataCenter>, ParseError> {
+pub fn parse_html(html: impl AsRef<str>) -> Result<Vec<DataCenter>, ParseHtmlError> {
     let document = Html::parse_document(html.as_ref());
 
     let location_selector = Selector::parse("div.location").unwrap();
@@ -60,14 +60,14 @@ pub fn parse(html: impl AsRef<str>) -> Result<Vec<DataCenter>, ParseError> {
         let id = location_element
             .value()
             .attr("id")
-            .ok_or(ParseError::IdMissing)?
+            .ok_or(ParseHtmlError::IdMissing)?
             .to_owned();
 
         let city_selector = Selector::parse(".dc-city").unwrap();
         let city = location_element
             .select(&city_selector)
             .next()
-            .ok_or(ParseError::CityMissing)?
+            .ok_or(ParseHtmlError::CityMissing)?
             .inner_html();
 
         let mut available_services: Vec<AvailableService> = vec![];
@@ -81,15 +81,15 @@ pub fn parse(html: impl AsRef<str>) -> Result<Vec<DataCenter>, ParseError> {
             let mut td_element_iter = tr_element.select(&td_selector);
             let head_element = td_element_iter
                 .next()
-                .ok_or(ParseError::AttrElementInvalid)?;
+                .ok_or(ParseHtmlError::AttrElementInvalid)?;
             let _ = td_element_iter
                 .next()
-                .ok_or(ParseError::AttrElementInvalid)?;
+                .ok_or(ParseHtmlError::AttrElementInvalid)?;
             let value_element = td_element_iter
                 .next()
-                .ok_or(ParseError::AttrElementInvalid)?;
+                .ok_or(ParseHtmlError::AttrElementInvalid)?;
             if td_element_iter.next().is_some() {
-                return Err(ParseError::AttrElementInvalid);
+                return Err(ParseHtmlError::AttrElementInvalid);
             }
             match head_element.inner_html().as_str() {
                 "Available Services" => {
@@ -106,7 +106,7 @@ pub fn parse(html: impl AsRef<str>) -> Result<Vec<DataCenter>, ParseError> {
                                 "Private Cloud" => {
                                     available_services.push(AvailableService::PrivateCloud)
                                 }
-                                _ => return Err(ParseError::AvailableServiceUnknown),
+                                _ => return Err(ParseHtmlError::AvailableServiceUnknown),
                             }
                         }
                     }
@@ -126,7 +126,9 @@ pub fn parse(html: impl AsRef<str>) -> Result<Vec<DataCenter>, ParseError> {
                     match s.as_str() {
                         "-" | "" => {}
                         _ => {
-                            let v = s.parse().map_err(|err| ParseError::PingInvalid(s, err))?;
+                            let v = s
+                                .parse()
+                                .map_err(|err| ParseHtmlError::PingInvalid(s, err))?;
                             ping = Some(v);
                         }
                     }
@@ -175,7 +177,7 @@ pub fn parse(html: impl AsRef<str>) -> Result<Vec<DataCenter>, ParseError> {
 }
 
 #[derive(thiserror::Error, Debug)]
-pub enum ParseError {
+pub enum ParseHtmlError {
     #[error("IdMissing")]
     IdMissing,
     #[error("CityMissing")]
@@ -193,10 +195,10 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_parse() {
+    fn test_parse_html() {
         let html = include_str!("../tests/data-centers.html");
 
-        let data_centers = parse(html).unwrap();
+        let data_centers = parse_html(html).unwrap();
 
         println!("{:?}", data_centers);
 
