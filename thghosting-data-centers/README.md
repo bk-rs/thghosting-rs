@@ -5,13 +5,13 @@
 ## Dev
 
 ```
-curl https://www.thghosting.com/network/data-centers/ -o tests/data-centers.html
+curl -L https://www.ingenuitycloudservices.com/network/data-centers/ -o tests/data-centers.html
 ```
 
 ```
 sudo pacman -S js-beautify
 
-curl -sS https://thg-hosting-master100tbcorp.netdna-ssl.com/views/js/production-stable.min.js \
+curl -sS https://thg-hosting-master100tbcorp.netdna-ssl.com/views/js/production-stable.min.js?v=1667413195 \
     | js-beautify \
     | sed -n '/^            dataCentres: \[{$/,/^            }\]$/p' \
     | sed '1i{' \

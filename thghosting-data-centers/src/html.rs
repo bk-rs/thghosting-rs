@@ -204,9 +204,32 @@ pub enum ParseHtmlError {
 mod tests {
     use super::*;
 
+    use std::{env, fs, path::PathBuf};
+
     #[test]
     fn test_parse_html() {
-        let html = include_str!("../tests/data-centers.html");
+        let manifest_path = if let Ok(manifest_dir) = env::var("CARGO_MANIFEST_DIR") {
+            PathBuf::from(&manifest_dir)
+        } else {
+            PathBuf::new()
+        };
+
+        let html_path_1 = manifest_path
+            .join("thghosting-data-centers")
+            .join("tests")
+            .join("data-centers.html");
+        let html_path = if html_path_1.exists() {
+            html_path_1
+        } else {
+            manifest_path.join("tests").join("data-centers.html")
+        };
+        println!("html_path:{:?}", html_path);
+
+        let html = match fs::read_to_string(html_path) {
+            Ok(x) => x,
+            Err(err) if err.kind() == std::io::ErrorKind::NotFound => return,
+            Err(err) => panic!("{}", err),
+        };
 
         let data_centers = parse_html(html).unwrap();
 
@@ -232,7 +255,7 @@ mod tests {
         );
         assert_eq!(
             dc_london.url,
-            Some("https://info.thghosting.com/us/data-center/london".to_owned())
+            Some("https://info.ingenuitycloudservices.com/us/data-center/london".to_owned())
         );
     }
 }
