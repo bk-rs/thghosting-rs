@@ -223,7 +223,7 @@ mod tests {
         } else {
             manifest_path.join("tests").join("data-centers.html")
         };
-        println!("html_path:{:?}", html_path);
+        println!("html_path:{html_path:?}");
 
         let html = match fs::read_to_string(html_path) {
             Ok(x) => x,
@@ -233,7 +233,7 @@ mod tests {
 
         let data_centers = parse_html(html).unwrap();
 
-        println!("{:?}", data_centers);
+        println!("{data_centers:?}");
 
         let dc_london = data_centers.iter().find(|dc| dc.id == "london").unwrap();
         assert_eq!(dc_london.city, "London");
