@@ -11,7 +11,7 @@ curl -L https://www.ingenuitycloudservices.com/network/data-centers/ -o tests/da
 ```
 sudo pacman -S js-beautify
 
-curl -sS https://thg-hosting-master100tbcorp.netdna-ssl.com/views/js/production-stable.min.js?v=1667413195 \
+curl -sS 'https://www.ingenuitycloudservices.com/views/js/production-stable.min.js?v=1674823577' \
     | js-beautify \
     | sed -n '/^            dataCentres: \[{$/,/^            }\]$/p' \
     | sed '1i{' \

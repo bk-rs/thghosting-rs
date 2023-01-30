@@ -29,7 +29,7 @@
                     "src": "http://185.80.222.81/speedtest.256mb"
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/us/data-center/amsterdam\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             }
         ]
     },
@@ -117,7 +117,7 @@
                     "src": "http://104.200.137.2/test100.zip"
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/us/data-center/chicago\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             }
         ]
     },
@@ -145,7 +145,7 @@
                     "src": "http://192.111.142.7/speedtest.256mb"
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/us/data-center/dallas\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             },
             {
                 "id": "dallas",
@@ -193,7 +193,7 @@
                     "src": "http://speedtest.fra02.softlayer.com/downloads/test100.zip"
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/us/data-center/frankfurt\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             }
         ]
     },
@@ -281,7 +281,7 @@
                     "src": "http://82.163.78.28/speedtest.256mb"
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/us/data-center/london\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             }
         ]
     },
@@ -314,7 +314,7 @@
                     "src": "http://172.98.94.29/test100.zip"
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/us/data-center/los-angeles\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             }
         ]
     },
@@ -487,7 +487,7 @@
                     "src": ""
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/us/data-center/new-jersey\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             }
         ]
     },
@@ -516,11 +516,11 @@
                 "ping": "107.182.236.247",
                 "certifications": "SSAE 16<br>HIPAA<br>PCI compliant<br>CPNI",
                 "testDownload": {
-                    "label": "100MB",
-                    "src": "http://107.182.236.247/100mb.file"
+                    "label": "-",
+                    "src": ""
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/us/data-center/new-york-city\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             }
         ]
     },
@@ -586,7 +586,7 @@
                     "src": "http://172.98.77.20/speedtest.256mb"
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/us/data-center/miami\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             }
         ]
     },
@@ -651,7 +651,7 @@
                     "src": "http://slc01.100tb.com/spd/100mb.file"
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/us/data-center/salt-lake-city\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             }
         ]
     },
@@ -708,7 +708,7 @@
                     "src": "http://speedtest.sao01.softlayer.com/downloads/test100.zip"
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/us/data-center/saopaulo\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             }
         ]
     },
@@ -825,7 +825,7 @@
                     "src": "http://speedtest.syd01.softlayer.com/downloads/test100.zip"
                 },
                 "link": "#",
-                "pardot": "<a href=\"https://info.ingenuitycloudservices.com/data-center/sydney\" class=\"btn btn-secondary btn-medium\" target=\"_blank\">Learn More</a>"
+                "pardot": ""
             }
         ]
     },

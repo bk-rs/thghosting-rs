@@ -235,6 +235,7 @@ mod tests {
 
         println!("{data_centers:?}");
 
+        //
         let dc_london = data_centers.iter().find(|dc| dc.id == "london").unwrap();
         assert_eq!(dc_london.city, "London");
         assert_eq!(
@@ -253,9 +254,14 @@ mod tests {
             dc_london.test_download,
             Some("http://82.163.78.28/speedtest.256mb".to_owned())
         );
+        assert_eq!(dc_london.url, None);
+
+        //
+        let dc_phoenix = data_centers.iter().find(|dc| dc.id == "phoenix").unwrap();
+        assert_eq!(dc_phoenix.city, "Phoenix");
         assert_eq!(
-            dc_london.url,
-            Some("https://info.ingenuitycloudservices.com/us/data-center/london".to_owned())
+            dc_phoenix.url,
+            Some("https://info.ingenuitycloudservices.com/us/data-center/miami".into())
         );
     }
 }
